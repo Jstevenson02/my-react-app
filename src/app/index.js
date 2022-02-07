@@ -1,1 +1,5 @@
-console.log("hello world")
+import { createStore } from 'redux';
+import { store } from "./store"; 
+
+console.log("hello world");
+console.log(store.getState());

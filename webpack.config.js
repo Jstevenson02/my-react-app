@@ -5,12 +5,14 @@ module.exports = {
     entry: path.resolve(__dirname, 'src', 'app'),
     output: {
         path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js',
         publicPath: '/'
     },
     resolve: {
-        extentions: ['.js', '.jsx']
+        modules: ['.js', '.jsx']
     },
     devServer: {
+        inline: false,
         historyApiFallback: true
     },
     module: {
